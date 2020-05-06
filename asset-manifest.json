@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/oscarrobertrodriguez.github.io/amazon-trainer/static/css/main.d1b05096.chunk.css",
+    "main.js": "/oscarrobertrodriguez.github.io/amazon-trainer/static/js/main.1f487538.chunk.js",
+    "main.js.map": "/oscarrobertrodriguez.github.io/amazon-trainer/static/js/main.1f487538.chunk.js.map",
+    "runtime-main.js": "/oscarrobertrodriguez.github.io/amazon-trainer/static/js/runtime-main.059b73c2.js",
+    "runtime-main.js.map": "/oscarrobertrodriguez.github.io/amazon-trainer/static/js/runtime-main.059b73c2.js.map",
+    "static/js/2.4b58da36.chunk.js": "/oscarrobertrodriguez.github.io/amazon-trainer/static/js/2.4b58da36.chunk.js",
+    "static/js/2.4b58da36.chunk.js.map": "/oscarrobertrodriguez.github.io/amazon-trainer/static/js/2.4b58da36.chunk.js.map",
+    "index.html": "/oscarrobertrodriguez.github.io/amazon-trainer/index.html",
+    "precache-manifest.27d91aaf87985706be87646f0d0351e2.js": "/oscarrobertrodriguez.github.io/amazon-trainer/precache-manifest.27d91aaf87985706be87646f0d0351e2.js",
+    "service-worker.js": "/oscarrobertrodriguez.github.io/amazon-trainer/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/oscarrobertrodriguez.github.io/amazon-trainer/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.4b58da36.chunk.js.LICENSE.txt": "/oscarrobertrodriguez.github.io/amazon-trainer/static/js/2.4b58da36.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/oscarrobertrodriguez.github.io/amazon-trainer/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.059b73c2.js",
+    "static/js/2.4b58da36.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.1f487538.chunk.js"
+  ]
+}
