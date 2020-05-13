@@ -1,0 +1,39 @@
+.signIn__form {
+  display: grid;
+  grid-row: 3/-1;
+  width: 100%;
+  grid-template-rows: repeat(4, 1fr);
+  background: #fff;
+  align-items: center;
+}
+
+.signIn__form-input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  font-size: .94rem ;
+  height: 100%;
+}
+
+.signIn__form-input::placeholder {
+  text-transform: capitalize;
+}
+
+.signIn__checkbox-container {
+  border-bottom: 1px solid #ccc;
+  height: 100%;
+  display: grid;
+  grid-template-columns: .1fr 1fr;
+  align-items: center;
+  justify-items: left;
+  padding-left: 10px;
+}
+
+.signIn__form-para {
+  margin: 0;
+  padding:0;
+  grid-row: 4/-1;
+  font-size: .9rem;
+  color: HSL(25, 99%, 55%);
+  text-transform: uppercase;
+}

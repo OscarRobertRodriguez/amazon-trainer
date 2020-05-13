@@ -6,7 +6,7 @@ import Phone from './Phone/Phone';
 function App() {
   return (
     <div className="App">
-       <Phone/>
+      <Phone/>
     </div>
   );
 }
