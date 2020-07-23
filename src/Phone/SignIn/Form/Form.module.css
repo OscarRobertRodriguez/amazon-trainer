@@ -11,8 +11,15 @@
   border: none;
   border-bottom: 1px solid #ccc;
   padding: 10px;
-  font-size: .94rem ;
+  font-size: 0.94rem;
   height: 100%;
+}
+.sign__form-input:focus {
+  outline: none;
+}
+
+input:focus:invalid {
+  outline: none;
 }
 
 .signIn__form-input::placeholder {
@@ -23,7 +30,7 @@
   border-bottom: 1px solid #ccc;
   height: 100%;
   display: grid;
-  grid-template-columns: .1fr 1fr;
+  grid-template-columns: 0.1fr 1fr;
   align-items: center;
   justify-items: left;
   padding-left: 10px;
@@ -31,9 +38,24 @@
 
 .signIn__form-para {
   margin: 0;
-  padding:0;
-  grid-row: 4/-1;
-  font-size: .9rem;
+  padding: 0;
+  grid-row: 4/5;
+  font-size: 0.9rem;
   color: HSL(25, 99%, 55%);
   text-transform: uppercase;
+}
+
+.signIn__form-button {
+  width: 100%;
+  height: 50px;
+  background: HSL(25, 99%, 55%);
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.2s ease all;
+  outline: none;
+  grid-row: 5/-1;
 }

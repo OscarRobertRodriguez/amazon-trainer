@@ -1,0 +1,214 @@
+.scan {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-rows: 1fr 50px 1fr;
+}
+
+.scanner {
+  grid-row: 1/2;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background-size: cover;
+  width: 100%;
+  filter: grayscale(1) contrast(70%) brightness(1);
+  background-repeat: no-repeat;
+}
+
+.dragTxt {
+  font-size: 1.4rem;
+  color: #fff;
+  text-transform: uppercase;
+  grid-column: 1/2;
+  text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.9);
+}
+
+.scanIt {
+  width: 85%;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  height: 40%;
+  position: relative;
+  font-weight: bold;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.scanIt::after {
+  content: "scandit";
+  color: currentColor;
+  position: absolute;
+  bottom: -17px;
+  right: 5px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.pic {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+
+.statusBar {
+  grid-row: 2/3;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 10px 0.2fr;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.light {
+  transform: rotate(180deg);
+  grid-column: 3/-1;
+  justify-self: center;
+}
+
+.list {
+  grid-row: 3/4;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: minmax(auto-fill, 1fr);
+}
+
+/* list item component */
+
+.container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: grid;
+  height: 90px;
+  grid-template-columns: 1fr 15px 2fr 4fr 1fr;
+  grid-template-rows: 10px 0.2fr 1fr max-content 10px;
+  align-items: center;
+  justify-items: center;
+  background: rgb(252, 250, 250);
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  transition: 0.2s ease background;
+}
+
+.item:hover {
+  background: rgb(240, 239, 239);
+}
+
+.locationHeader,
+.idHeader {
+  grid-row: 2/3;
+  text-transform: capitalize;
+  color: gray;
+  font-size: 0.9rem;
+  justify-self: start;
+}
+
+.box {
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+.arrow {
+  grid-column: 5/6;
+  grid-row: 1/5;
+  transform: rotate(180deg);
+  transition: 0.1s ease all;
+}
+
+.flip {
+  transform: rotate(0deg);
+}
+
+.locationHeader {
+  grid-column: 3/4;
+}
+
+.idHeader {
+  grid-column: 4/5;
+}
+
+.location,
+.id {
+  grid-row: 3/4;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  justify-self: start;
+}
+
+.location {
+  grid-column: 3/4;
+}
+
+.id {
+  grid-column: 4/5;
+}
+
+.itemsContainer {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.45ms ease-in-out max-height;
+  background: rgb(223, 220, 220);
+}
+
+.expand {
+  max-height: 100%;
+}
+
+.package {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 15px 2fr 4fr 1fr;
+  grid-template-rows: min-content max-content min-content;
+  align-items: center;
+  justify-items: start;
+  height: 90px;
+  padding: 5px 0;
+  border-bottom: 1px solid rgb(187, 185, 185);
+}
+
+.packageIcon {
+  grid-row: 1 /4;
+  grid-column: 1/2;
+  align-self: center;
+  justify-self: center;
+}
+
+.barcodeTitle {
+  grid-column: 3/5;
+  grid-row: 1/2;
+  text-transform: capitalize;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  align-self: end;
+}
+.barcodeText {
+  grid-column: 3/5;
+  grid-row: 2/3;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 8px 0;
+}
+
+.tag {
+  border-radius: 100px;
+  width: max-content;
+  padding: 3px 10px;
+  background: rgb(62, 62, 62);
+  font-size: 13px;
+  color: #fff;
+  text-transform: capitalize;
+  grid-column: 3/4;
+  grid-row: 3/4;
+}

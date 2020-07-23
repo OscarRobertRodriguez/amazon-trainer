@@ -1,0 +1,44 @@
+.ready__container {
+  display: grid;
+  grid-template-rows: min-content 1fr 50px;
+  grid-row: 2/3;
+}
+
+.ready__flex-logo {
+  margin-top: 150px;
+  grid-row: 2/3;
+}
+
+.ready__warning {
+  display: grid;
+  grid-template-rows: min-content;
+  padding: 5px;
+  margin-top: 5px;
+  grid-row: 1/2;
+  background: HSL(54, 100%, 92%);
+  border: 1px solid HSL(52, 84%, 78%);
+  width: 95%;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+  justify-items: center;
+  border-radius: 5px;
+}
+
+.ready__warning-message {
+}
+
+.ready__button {
+  width: 100%;
+  height: 50px;
+  background: HSL(25, 99%, 55%);
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.2s ease all;
+  outline: none;
+  grid-row: 3/-1;
+}

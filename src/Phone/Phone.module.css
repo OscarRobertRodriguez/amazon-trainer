@@ -1,42 +1,41 @@
 .phone {
   height: 700px;
-  border: 1åpx solid black;
+  border: 1px solid black;
   width: 400px;
-  justify-self: end;
-  margin-right: 150px;
+  /* justify-self: end; */
+  /* margin-right: 150px; */
   border-radius: 25px;
   position: relative;
   display: grid;
   background: black;
-  box-shadow: 5px 15px 18px 3px rgba(0, 0, 0, .4);
+  box-shadow: 5px 15px 18px 3px rgba(0, 0, 0, 0.4);
 }
 
-
-.phone__volume-btn {
-   height: 80px;
-   width: 4px;
-   border-top-right-radius: 5px;
-   border-bottom-right-radius: 5px;
-   right: -4px;
-   top: 40%;
-   background: black;
-   position: absolute;
-   box-shadow: 5px 10px 10px 2px rgba(0, 0, 0, .4);
+.volBtn {
+  height: 80px;
+  width: 4px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  right: -4px;
+  top: 40%;
+  background: black;
+  position: absolute;
+  box-shadow: 5px 10px 10px 2px rgba(0, 0, 0, 0.4);
 }
 
-.phone__power-btn {
-    height: 50px;
-   width: 4px;
-   border-top-right-radius: 5px;
-   border-bottom-right-radius: 5px;
-   right: -4px;
-   top: 24%;
-   background: black;
-   position: absolute;
-   box-shadow: 5px 10px 10px 2px rgba(0, 0, 0, .4);
+.powerBtn {
+  height: 50px;
+  width: 4px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  right: -4px;
+  top: 24%;
+  background: black;
+  position: absolute;
+  box-shadow: 5px 10px 10px 2px rgba(0, 0, 0, 0.4);
 }
 
-.phone__camera {
+.camera {
   border-radius: 50px;
   width: 25px;
   height: 25px;
@@ -49,7 +48,7 @@
   justify-items: center;
 }
 
-.phone__camera-lens {
+.lens {
   width: 14px;
   height: 14px;
   border-radius: 50px;
@@ -57,23 +56,45 @@
   position: relative;
 }
 
-.phone__camera-lens::before {
-  content: '';
+.lens::before {
+  content: "";
   width: 2px;
   height: 2px;
   border-radius: 50px;
   background: rgb(175, 225, 175);
   position: absolute;
-  top:2px;
+  top: 2px;
 }
 
-.phone__camera-lens::after {
-  content: '';
+.lens::after {
+  content: "";
   width: 3px;
   height: 3px;
   border-radius: 50px;
   background: #fff;
   position: absolute;
-  top:4px;
+  top: 4px;
   right: 8px;
+}
+
+.signIn {
+  background: #fff;
+  height: 87%;
+  width: 92%;
+  align-self: center;
+  justify-self: center;
+  border-radius: 3px;
+}
+
+.loggedIn {
+  background: #fff;
+  height: 87%;
+  width: 92%;
+  align-self: center;
+  justify-self: center;
+  border-radius: 3px;
+  display: grid;
+  grid-template-rows: 45px 1fr;
+  position: relative;
+  overflow: hidden;
 }
